@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" id="tribute-info" href="#">Survey</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 id="title" class="jumbotron-heading"> Rishi Pvt.Ltd</h1>
+                <p id="description" class="lead text-muted">Every Feedback is a valuable to us.Kindly do fill the
+                    survey.:)</p>
+            </div>
+            <form id="survey-form">
+                <div class="form-group row">
+                    <label for="inputEmail3" id="name-label" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input id="name" type="text" required class="form-control" placeholder="enter your name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" id="email-label" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input id="email" type="email" class="form-control" placeholder="xyzzyx@gmail.com" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" id="number-label" class="col-sm-2 col-form-label">Age</label>
+                    <div class="col-sm-10">
+                        <input id="number" type="number" class="form-control" min=0 max=150
+                            placeholder="Enter your Age">
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="Radios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="Radios2"
+                                    value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group row">
+                    <div class="col-sm-2"><label for="exampleFormControlSelect1">Choose a field:</label></div>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="dropdown">
+                            <option>AI</option>
+                            <option>Full-Stack</option>
+                            <option>Application Development</option>
+                            <option>Network & security</option>
+                            <option>Testing&Deployement</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-2">What do you like the most:</div>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <ul>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="one" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1" name="check-boxes">
+                                        support
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="two" id="gridCheck2">
+                                    <label class="form-check-label" for="gridCheck2" name="check-boxes">
+                                        development
+                                    </label>
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="checkbox" value="three" id="gridCheck3">
+                                    <label class="form-check-label" for="gridCheck3" name="check-boxes">
+                                        architecture
+                                    </label>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-2">Comments:</div>
+                    <div class="col-sm-10">
+                        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                            placeholder="Enter your comment here..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
